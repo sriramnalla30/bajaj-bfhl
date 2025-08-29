@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-now 
+now;
 app.post("/bfhl", (req, res) => {
   try {
     const data = req.body.data;
@@ -64,6 +64,5 @@ app.post("/bfhl", (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// Export the app for Vercel serverless deployment
+module.exports = app;
