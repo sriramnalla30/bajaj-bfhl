@@ -3,7 +3,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-now;
 app.post("/bfhl", (req, res) => {
   try {
     const data = req.body.data;
